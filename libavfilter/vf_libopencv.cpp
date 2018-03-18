@@ -31,6 +31,7 @@
 #include <opencv/cv.h>
 #include <opencv/cxcore.h>
 #endif
+extern "C" {
 #include "libavutil/avstring.h"
 #include "libavutil/common.h"
 #include "libavutil/file.h"
@@ -39,6 +40,7 @@
 #include "formats.h"
 #include "internal.h"
 #include "video.h"
+}
 
 static void fill_iplimage_from_frame(IplImage *img, const AVFrame *frame, enum AVPixelFormat pixfmt)
 {
